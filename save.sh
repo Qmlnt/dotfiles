@@ -5,10 +5,10 @@ echo
 tree -a dotfiles | tee dotfiles_tree
 date +'%S:%M:%H %e/%d/%y' >> dotfiles_tree
 
-git status
+git status --short
 git add *
-git status
+git status --short
 git commit -m "`date +'%S:%M:%H %e/%d/%y'`"
-# git push origin
+git push origin
 
 cd -
