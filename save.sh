@@ -8,7 +8,7 @@ tree -a dotfiles | tee tree
 
 printf "\n\nChanges:"
 git status --short
-git add *
+git add --all
 printf "\nAdded:"
 git status --short
 git commit -m "`date +'%S:%M:%H %e/%d/%y'`"
