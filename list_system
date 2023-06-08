@@ -1,0 +1,9 @@
+/etc/vconsole.conf
+/etc/pacman.conf
+/etc/pacman.d/hooks/zsh.hook
+
+/etc/optimus-manager/optimus-manager.conf
+/etc/tmpfiles.d/energy_performance_preference.conf
+
+/etc/X11/xorg.conf.d/00-keyboard.conf
+/etc/X11/xorg.conf.d/30-touchpad.conf

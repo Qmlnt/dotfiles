@@ -1,0 +1,10 @@
+exec --no-startup-id picom -b
+exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id polybar &
+exec_always --no-startup-id redshift -PO 3800
+
+exec --no-startup-id nm-applet
+
+exec --no-startup-id xset s 3600 60
+exec --no-startup-id xss-lock --transfer-sleep-lock -n dim-screen.sh -- i3lock -efc A797FF --nofork
+

@@ -1,0 +1,34 @@
+dotfiles
+├── etc
+│   ├── optimus-manager
+│   │   └── optimus-manager.conf
+│   ├── pacman.conf
+│   ├── pacman.d
+│   │   └── hooks
+│   │       └── zsh.hook
+│   ├── tmpfiles.d
+│   │   └── energy_performance_preference.conf
+│   ├── vconsole.conf
+│   └── X11
+│       └── xorg.conf.d
+│           ├── 00-keyboard.conf
+│           └── 30-touchpad.conf
+└── home
+    └── qmlnt
+        └── .config
+            ├── i3
+            │   ├── autostart
+            │   ├── config
+            │   ├── modes
+            │   └── windows
+            ├── i3status
+            │   └── config
+            ├── kitty
+            │   ├── kitty.conf
+            │   └── tab_bar.py
+            ├── picom
+            │   └── picom.conf
+            └── polybar
+                └── config.ini
+
+16 directories, 16 files

@@ -1,14 +1,18 @@
 cd /home/qmlnt/Backups/dotfiles/
 
-qncm -if save_list_user --to dotfiles
-echo
-tree -a dotfiles | tee dotfiles_tree
-date +'%S:%M:%H %e/%d/%y' >> dotfiles_tree
+sudo -k qncm -if list_system --to dotfiles
+qncm -if list_user --to dotfiles
+printf "\nSystem done!\n"
+tree -a dotfiles | tee tree
+# date +'%S:%M:%H %e/%d/%y' >> tree
 
+printf "\n\nChanges:"
 git status --short
 git add *
+printf "\nAdded:"
 git status --short
 git commit -m "`date +'%S:%M:%H %e/%d/%y'`"
+printf "\nPushing:"
 git push origin
 
 cd -

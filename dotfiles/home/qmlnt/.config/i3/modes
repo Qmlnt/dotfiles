@@ -1,0 +1,65 @@
+set $mode_launch_app firefox nemo blender spyder Steam virtualbox Vlc xreader arduino klavaro | discord telegram vIber | pavucontrol wifi Blueman Nitrogen Arandr
+mode "$mode_launch_app" {
+    bindsym f exec --no-startup-id firefox, mode "default"
+    bindsym n exec --no-startup-id nemo, mode "default"
+    bindsym b exec --no-startup-id blender, mode "default"
+    bindsym s exec --no-startup-id spyder, mode "default"
+    bindsym Shift+s exec --no-startup-id steam, mode "default"
+    bindsym v exec --no-startup-id virtualbox, mode "default"
+    bindsym Shift+v exec --no-startup-id vlc, mode "default"
+    bindsym x exec --no-startup-id xreader, mode "default"
+    bindsym a exec --no-startup-id arduino-ide, mode "default"
+    bindsym k exec --no-startup-id klavaro, mode "default"
+
+    bindsym d exec --no-startup-id discord, mode "default"
+    bindsym Shift+i exec --no-startup-id viber, mode "default"
+    bindsym t exec --no-startup-id telegram-desktop, mode "default"
+    bindsym p exec --no-startup-id pavucontrol, mode "default"
+    bindsym w exec --no-startup-id nm-connection-editor, mode "default"
+    bindsym Shift+b exec --no-startup-id blueman-manager, mode "default"
+    bindsym Shift+n exec --no-startup-id nitrogen, mode "default"
+    bindsym Shift+a exec --no-startup-id arandr, mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+m mode "default"
+}
+bindsym $alt+l mode "$mode_launch_app"
+
+set $mode_manage_system Shutdown Reboot Hibernate (z)Suspend | Nvidia (d)Hybrid Integrated
+mode "$mode_manage_system" {
+    # NEED i3exit from AUR
+    bindsym r exec --no-startup-id reboot
+    bindsym s exec --no-startup-id shutdown now
+    bindsym z exec --no-startup-id systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id systemctl hibernate, mode "default"
+
+    bindsym n exec --no-startup-id optimus-manager --switch nvidia --no-confirm
+    bindsym d exec --no-startup-id optimus-manager --switch hybrid --no-confirm
+    bindsym i exec --no-startup-id optimus-manager --switch integrated --no-confirm
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $Alt+s mode "default"
+}
+bindsym $alt+s mode "$mode_manage_system"
+
+
+mode "resize" {
+    bindsym h resize shrink width 20 px or 20 ppt
+    bindsym j resize grow height 20 px or 20 ppt
+    bindsym k resize shrink height 20 px or 20 ppt
+    bindsym l resize grow width 20 px or 20 ppt
+
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
