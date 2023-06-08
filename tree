@@ -15,20 +15,21 @@ dotfiles
 │           └── 30-touchpad.conf
 └── home
     └── qmlnt
-        └── .config
-            ├── i3
-            │   ├── autostart
-            │   ├── config
-            │   ├── modes
-            │   └── windows
-            ├── i3status
-            │   └── config
-            ├── kitty
-            │   ├── kitty.conf
-            │   └── tab_bar.py
-            ├── picom
-            │   └── picom.conf
-            └── polybar
-                └── config.ini
+        ├── .config
+        │   ├── i3
+        │   │   ├── autostart
+        │   │   ├── config
+        │   │   ├── modes
+        │   │   └── windows
+        │   ├── i3status
+        │   │   └── config
+        │   ├── kitty
+        │   │   ├── kitty.conf
+        │   │   └── tab_bar.py
+        │   ├── picom
+        │   │   └── picom.conf
+        │   └── polybar
+        │       └── config.ini
+        └── .zshrc
 
-16 directories, 16 files
+16 directories, 17 files
