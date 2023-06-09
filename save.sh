@@ -3,7 +3,7 @@ cd /home/qmlnt/Backups/dotfiles/
 sudo -k qncm -if list_system --to dotfiles
 qncm -if list_user --to dotfiles
 printf "\nTree:\n"
-tree -aC --dirsfirst dotfiles | tee tree
+tree -a --dirsfirst dotfiles | tee tree
 # date +'%S:%M:%H %e/%d/%y' >> tree
 
 printf "\n\nChanges:\n"

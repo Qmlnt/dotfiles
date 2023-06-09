@@ -1,35 +1,35 @@
-[01;34mdotfiles[0m
-├── [01;34metc[0m
-│   ├── [01;34moptimus-manager[0m
-│   │   └── [00moptimus-manager.conf[0m
-│   ├── [01;34mpacman.d[0m
-│   │   └── [01;34mhooks[0m
-│   │       └── [00mzsh.hook[0m
-│   ├── [01;34mtmpfiles.d[0m
-│   │   └── [00menergy_performance_preference.conf[0m
-│   ├── [01;34mX11[0m
-│   │   └── [01;34mxorg.conf.d[0m
-│   │       ├── [00m00-keyboard.conf[0m
-│   │       └── [00m30-touchpad.conf[0m
-│   ├── [00mpacman.conf[0m
-│   └── [00mvconsole.conf[0m
-└── [01;34mhome[0m
-    └── [01;34mqmlnt[0m
-        ├── [01;34m.config[0m
-        │   ├── [01;34mi3[0m
-        │   │   ├── [00mautostart[0m
-        │   │   ├── [00mconfig[0m
-        │   │   ├── [00mmodes[0m
-        │   │   └── [00mwindows[0m
-        │   ├── [01;34mi3status[0m
-        │   │   └── [00mconfig[0m
-        │   ├── [01;34mkitty[0m
-        │   │   ├── [00mkitty.conf[0m
-        │   │   └── [00mtab_bar.py[0m
-        │   ├── [01;34mpicom[0m
-        │   │   └── [00mpicom.conf[0m
-        │   └── [01;34mpolybar[0m
-        │       └── [00mconfig.ini[0m
-        └── [00m.zshrc[0m
+dotfiles
+├── etc
+│   ├── optimus-manager
+│   │   └── optimus-manager.conf
+│   ├── pacman.d
+│   │   └── hooks
+│   │       └── zsh.hook
+│   ├── tmpfiles.d
+│   │   └── energy_performance_preference.conf
+│   ├── X11
+│   │   └── xorg.conf.d
+│   │       ├── 00-keyboard.conf
+│   │       └── 30-touchpad.conf
+│   ├── pacman.conf
+│   └── vconsole.conf
+└── home
+    └── qmlnt
+        ├── .config
+        │   ├── i3
+        │   │   ├── autostart
+        │   │   ├── config
+        │   │   ├── modes
+        │   │   └── windows
+        │   ├── i3status
+        │   │   └── config
+        │   ├── kitty
+        │   │   ├── kitty.conf
+        │   │   └── tab_bar.py
+        │   ├── picom
+        │   │   └── picom.conf
+        │   └── polybar
+        │       └── config.ini
+        └── .zshrc
 
 16 directories, 17 files
