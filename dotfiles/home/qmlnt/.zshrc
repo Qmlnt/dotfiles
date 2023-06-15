@@ -112,8 +112,6 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
 [[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
 [[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
-# [[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
-# [[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
 [[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
 [[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
 [[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
@@ -152,6 +150,23 @@ path+=('/home/qmlnt/.local/bin')
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
+alias cp='cp -iv'
+alias rm='rm -iv'
+alias mv='mv -iv'
+alias ln='ln -iv'
+alias mkdir="mkdir -v"
+alias rmdir='rmdir -v'
+alias chmod="chmod -c"
+alias chown="chown -c"
+alias grep='grep --color=auto'
+alias egrep='grep --color=auto -E'
+
+alias ls="ls --color=auto --group-directories-first -F"
+alias ll="ls --color=auto --group-directories-first -Flh"
+alias la="ls --color=auto --group-directories-first -Flah"
+
+# alias rcp='rsync -v --progress'
+# alias rmv='rsync -v --progress --remove-source-files'
 # alias ml="source ~/Programming/Environments/MachineLearning/bin/activate; cd ~/Programming/MachineLearning/; kitty jupyter-lab &!"
 # alias mle="source ~/Programming/Environments/MachineLearning/bin/activate"
 alias notify="/home/qmlnt/Programming/Python/notifier.py"
