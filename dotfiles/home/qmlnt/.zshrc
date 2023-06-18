@@ -161,9 +161,9 @@ alias chown="chown -c"
 alias grep='grep --color=auto'
 alias egrep='grep --color=auto -E'
 
-alias ls="ls --color=auto --group-directories-first -F"
-alias ll="ls --color=auto --group-directories-first -Flh"
-alias la="ls --color=auto --group-directories-first -Flah"
+alias ls="ls --color=auto --hyperlink=auto --group-directories-first -F"
+alias ll="ls --color=auto --hyperlink=auto --group-directories-first -Flh"
+alias la="ls --color=auto --hyperlink=auto --group-directories-first -Flah"
 
 # alias rcp='rsync -v --progress'
 # alias rmv='rsync -v --progress --remove-source-files'
