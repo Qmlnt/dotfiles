@@ -13,7 +13,7 @@ include windows
 
 bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d exec --no-startup-id rofi -show
-bindsym $mod+n exec --no-startup-id redshift -PO 3800
+bindsym $mod+n exec --no-startup-id redshift -PO 4000
 bindsym $mod+Shift+n exec --no-startup-id redshift -x
 bindsym $mod+minus move scratchpad
 bindsym $mod+equal scratchpad show, floating disable
