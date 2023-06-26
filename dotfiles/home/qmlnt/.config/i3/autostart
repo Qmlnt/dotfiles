@@ -1,7 +1,7 @@
 exec --no-startup-id picom -b
 exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id polybar &
-exec_always --no-startup-id redshift -PO 4000
+exec_always --no-startup-id redshift -PO 3800
 
 exec --no-startup-id nm-applet
 
