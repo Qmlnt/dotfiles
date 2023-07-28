@@ -1,0 +1,56 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: HackNerdFont;
+    font-weight: 600;
+    font-size: 15px;
+    min-height: 0;
+}
+window#waybar {
+    background: #333333;
+    color: #ffffff;
+}
+
+
+#workspaces button {
+    padding: 0 3px;
+}
+#workspaces button.active {
+    background-color: #446688;
+}
+
+#submap {
+    margin-left: 4px;
+    padding: 0 5px;
+    background-color: #882222;
+}
+#window {
+    font-size: 16px;
+}
+
+#tray, #bluetooth, #network, #cpu, #memory, #disk, #wireplumber, #backlight, #custom-plugged, #battery, #clock {
+    margin: 0 2px;
+    padding: 0 5px;
+    background-color: #446666;
+}
+
+#tray {
+    background-color: #445555;
+}
+
+#custom-plugged {
+    margin-right: 0;
+    padding-right: 0;
+}
+#battery {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#battery.warning, #wireplumber.muted{
+    background-color: #886600;
+}
+#battery.critical {
+    background-color: #880000;
+}
+

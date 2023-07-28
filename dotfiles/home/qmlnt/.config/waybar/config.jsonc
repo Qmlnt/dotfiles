@@ -1,0 +1,151 @@
+{
+    "name": "main",
+    "layer": "top",
+    "position": "bottom",
+    "output": ["eDP-1"],
+    "height": 24,
+    //"width": 1280,
+    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "custom/plugged", "battery", "clock"],
+    "fixed-center": false,
+    //"margin": 5,
+    //"margin-<top|left|bottom|right>": int,
+    //"spacing": 4,
+    "exclusive": true,
+    "ipc": false,
+    //"include": ["~/.config/waybar/modules.jsonc"]
+
+
+
+    "hyprland/submap": {
+        "tooltip": false
+    },
+
+    "hyprland/window": {
+        "max-length": 100
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "show-passive-items": false,
+        "spacing": 3,
+        "reverse-direction": true
+    },
+
+    "bluetooth": {
+        "tooltip": true,
+        "max-length": 25,
+        "tooltip-format": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "'{device_alias}' ({device_address}), {device_address_type}",
+        "format": "",
+        "format-on": " {controller_alias}",
+        "format-off": "󰂲",
+        "format-disabled": "󰂲", // "" hides the module
+        "format-connected": "󰂱 {device_alias}"
+    },
+
+    "network": {
+        "interval": 6,
+        "tooltip": false,
+        "max-length": 30,
+        "interface": "wlan0",
+        "family": "ipv4",
+        "format": "{ifname}",
+        "format-wifi": "{icon} {essid}",
+        "format-alt": "{icon} ({signalStrength}%) {essid} {frequency}MHz",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-linked": "󱤚 ",
+        "format-disconnected": "󰣽 ",
+        "format-icons": ["󰣾", "󰣴", "󰣶", "󰣸", "󰣺"]
+        //"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+
+    "cpu": {
+        "interval": 10,
+        "tooltip": true,
+        "format": " {usage}% {avg_frequency}GHz",
+        "format-alt": " {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"
+    },
+
+    "memory": {
+        "interval": 10,
+        "tooltip": false,
+        "format": " {percentage}% 󰮱 {swapPercentage}%",
+        "format-alt": " {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
+    },
+
+    "disk": {
+        "interval": 60,
+        "tooltip": false,
+        "path": "/",
+        "format": "🖴 {percentage_used}%",
+        "format-alt": "🖴 {used}/{total}"
+    },
+
+    "wireplumber": {
+        "tooltip": true,
+        "tooltip-format": "{node_name}",
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        //"max-volume": 100,
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": ["󰕿","󰖀","󰕾"]
+
+    },
+
+    "backlight": {
+        "tooltip": false,
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        "format": "{icon} {percent}%",                                 
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    //"custom/plugged": {
+    //    "interval": 1,
+    //    "tooltip": false,
+    //    "exec": "printf '{\"alt\":\"%s\"}' $(cat /sys/class/power_supply/AC/online)",
+    //    //"exec": "p=(󱘖 ); echo ${p[$(cat /sys/class/power_supply/AC/online)]}",
+    //    "return-type": "json",
+    //    //"escape": false,
+    //    "format": "{icon} {}",
+    //    "format-alt": "test",
+    //    "format-icons": {"0": "󱘖", "1": ""}
+    //},
+ 
+    "custom/plugged": {
+        "interval": 6,
+        "tooltip": false,
+        "exec": "~/.config/waybar/plugged.sh",
+        "format": "{} "
+    },
+
+    "battery": {
+        "tooltip": false,
+        "tooltip-format": "{timeTo}",
+        "bat": "BAT0",
+        "adapter": "AC",
+        "design-capacity": true,
+        //"full-at": 80,
+        "interval": 15,
+        "states": {"warning": 20, "critical": 5},
+        "format-time": "{H}:{m}",
+
+        "format-plugged": "{capacity}%",
+        "format-full": "󱟣{capacity}%",
+        "format-charging": "󰂄{capacity}% {time}",
+        "format": "{icon}{capacity}% {power:.2f}W {time}",
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󱟢"]
+    },
+
+    "clock" : {
+        "interval": 60,
+        "tooltip": false,
+        "tooltip-format": "{}",
+        "format": "{:%d.%m %H:%M}",
+        "format-alt": "{:%a/%b %d.%m.%y %H:%M}"
+    }
+
+}
