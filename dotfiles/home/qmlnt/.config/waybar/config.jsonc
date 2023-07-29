@@ -62,14 +62,14 @@
     },
 
     "cpu": {
-        "interval": 10,
+        "interval": 12,
         "tooltip": true,
         "format": " {usage}% {avg_frequency}GHz",
         "format-alt": " {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"
     },
 
     "memory": {
-        "interval": 10,
+        "interval": 12,
         "tooltip": false,
         "format": " {percentage}% 󰮱 {swapPercentage}%",
         "format-alt": " {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
@@ -91,7 +91,7 @@
         //"max-volume": 100,
         "format": "{icon} {volume}%",
         "format-muted": "",
-        "format-icons": ["󰕿","󰖀","󰕾"]
+        "format-icons": ["󰕿","󰖀","󰖀","󰕾"]
 
     },
 
@@ -100,7 +100,7 @@
         "on-scroll-up": "",
         "on-scroll-down": "",
         "format": "{icon} {percent}%",                                 
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", "", ""]
     },
 
     //"custom/plugged": {

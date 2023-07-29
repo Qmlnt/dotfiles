@@ -1,12 +1,14 @@
-/home/qmlnt/.zshrc
+/home/qmlnt/.config/hypr/binds.conf
+/home/qmlnt/.config/hypr/hyprland.conf
+/home/qmlnt/.config/hypr/variables.conf
+/home/qmlnt/.config/hypr/windowrules.conf
+/home/qmlnt/.config/hypr/hyprpaper.conf
+
+/home/qmlnt/.config/waybar/config.jsonc
+/home/qmlnt/.config/waybar/style.css
+/home/qmlnt/.config/waybar/plugged.sh
+
 /home/qmlnt/.config/kitty/kitty.conf
 /home/qmlnt/.config/kitty/tab_bar.py
 
-/home/qmlnt/.config/i3/config
-/home/qmlnt/.config/i3/modes
-/home/qmlnt/.config/i3/autostart
-/home/qmlnt/.config/i3/windows
-/home/qmlnt/.config/i3status/config
-
-/home/qmlnt/.config/picom/picom.conf
-/home/qmlnt/.config/polybar/config.ini
+#/home/qmlnt/.zshrc

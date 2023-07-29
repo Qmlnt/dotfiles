@@ -13,23 +13,42 @@ dotfiles
 │   │       └── 30-touchpad.conf
 │   ├── pacman.conf
 │   └── vconsole.conf
-└── home
-    └── qmlnt
-        ├── .config
-        │   ├── i3
-        │   │   ├── autostart
-        │   │   ├── config
-        │   │   ├── modes
-        │   │   └── windows
-        │   ├── i3status
-        │   │   └── config
-        │   ├── kitty
-        │   │   ├── kitty.conf
-        │   │   └── tab_bar.py
-        │   ├── picom
-        │   │   └── picom.conf
-        │   └── polybar
-        │       └── config.ini
-        └── .zshrc
+├── home
+│   └── qmlnt
+│       ├── .config
+│       │   ├── hypr
+│       │   │   ├── binds.conf
+│       │   │   ├── hyprland.conf
+│       │   │   ├── hyprpaper.conf
+│       │   │   ├── variables.conf
+│       │   │   └── windowrules.conf
+│       │   ├── i3
+│       │   │   ├── autostart
+│       │   │   ├── config
+│       │   │   ├── modes
+│       │   │   └── windows
+│       │   ├── i3status
+│       │   │   └── config
+│       │   ├── kitty
+│       │   │   ├── kitty.conf
+│       │   │   └── tab_bar.py
+│       │   ├── picom
+│       │   │   └── picom.conf
+│       │   ├── polybar
+│       │   │   └── config.ini
+│       │   └── waybar
+│       │       ├── config.jsonc
+│       │       ├── plugged.sh
+│       │       └── style.css
+│       └── .zshrc
+└── usr
+    ├── lib
+    │   └── systemd
+    │       └── network
+    │           └── 80-wlan0-wpa_supplicant.link
+    └── share
+        └── kbd
+            └── consolefonts
+                └── default16x32.psfu
 
-16 directories, 17 files
+25 directories, 27 files

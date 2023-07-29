@@ -1,6 +1,7 @@
+#!/usr/bin/zsh
 cd /home/qmlnt/Backups/dotfiles/
 
-sudo -k qncm -if list_system --to dotfiles
+doas qncm -if list_system --to dotfiles
 qncm -if list_user --to dotfiles
 printf "\nTree:\n"
 tree -a --dirsfirst dotfiles | tee tree
