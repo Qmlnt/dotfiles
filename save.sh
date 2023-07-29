@@ -13,7 +13,7 @@ git add --all
 printf "\nAdded:\n"
 git status --short
 printf "\nCommitting:\n"
-git commit -m "`date +'%S:%M:%H %e/%d/%y'`"
+git commit -m "$(date +'%-d.%-m.%Y %-H:%M:%S')"
 printf "\nPushing:\n"
 git push origin
 printf "\nDONE!\n\a"
