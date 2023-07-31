@@ -23,7 +23,8 @@
     },
 
     "hyprland/window": {
-        "max-length": 100
+        "max-length": 100,
+        "separate-outputs": false
     },
 
     "tray": {
@@ -62,9 +63,9 @@
     },
 
     "cpu": {
-        "interval": 12,
+        "interval": 8,
         "tooltip": true,
-        "format": " {usage}% {avg_frequency}GHz",
+        "format": " {usage}%",
         "format-alt": " {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"
     },
 
@@ -116,7 +117,7 @@
     //},
  
     "custom/plugged": {
-        "interval": 6,
+        "interval": 4,
         "tooltip": false,
         "exec": "~/.config/waybar/plugged.sh",
         "format": "{} "
@@ -129,12 +130,12 @@
         "adapter": "AC",
         "design-capacity": true,
         //"full-at": 80,
-        "interval": 15,
+        "interval": 6,
         "states": {"warning": 20, "critical": 5},
         "format-time": "{H}:{m}",
 
         "format-plugged": "{capacity}%",
-        "format-full": "󱟣{capacity}%",
+        "format-full": "󱊣{capacity}%",
         "format-charging": "󰂄{capacity}% {time}",
         "format": "{icon}{capacity}% {power:.2f}W {time}",
         "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󱟢"]

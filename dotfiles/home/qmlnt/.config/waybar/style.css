@@ -3,7 +3,7 @@
     border-radius: 0;
     font-family: HackNerdFont;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     min-height: 0;
 }
 window#waybar {
@@ -25,7 +25,7 @@ window#waybar {
     background-color: #882222;
 }
 #window {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 #tray, #bluetooth, #network, #cpu, #memory, #disk, #wireplumber, #backlight, #custom-plugged, #battery, #clock {
