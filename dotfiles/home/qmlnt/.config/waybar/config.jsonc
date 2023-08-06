@@ -136,7 +136,7 @@
         "adapter": "AC",
         "design-capacity": true,
         //"full-at": 80,
-        "interval": 3,
+        "interval": 4,
         "states": {"warning": 20, "critical": 5},
         "format-time": "{H}:{m}",
 
@@ -144,7 +144,7 @@
         "format-full": "󱊣{capacity}%",
         "format-charging": "󰂄{capacity}% {time} {power:.1f}W",
         "format": "{icon}{capacity}% {power:.2f}W {time}",
-        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󱟢"]
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
     },
 
     "clock" : {
