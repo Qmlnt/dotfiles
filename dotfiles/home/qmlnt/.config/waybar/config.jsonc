@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "custom/plugged", "battery", "clock"],
+    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "hyprland/language", "wireplumber", "backlight", "custom/plugged", "battery", "clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -72,7 +72,7 @@
     "memory": {
         "interval": 12,
         "tooltip": false,
-        "format": " {percentage}% 󰮱 {swapPercentage}%",
+        "format": " {percentage}%/{swapPercentage}%",
         "format-alt": " {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
     },
 
@@ -84,7 +84,13 @@
         "format-alt": "🖴 {used}/{total}"
     },
 
-    "wireplumber": {
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-uk": "UA"
+    },
+
+   "wireplumber": {
         "tooltip": true,
         "tooltip-format": "{node_name}",
         "on-scroll-up": "",

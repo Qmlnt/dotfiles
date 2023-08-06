@@ -24,11 +24,8 @@ window#waybar {
     padding: 0 5px;
     background-color: #882222;
 }
-#window {
-    font-size: 17px;
-}
 
-#tray, #bluetooth, #network, #cpu, #memory, #disk, #wireplumber, #backlight, #custom-plugged, #battery, #clock {
+#tray, #bluetooth, #network, #cpu, #memory, #disk, #language, #wireplumber, #backlight, #custom-plugged, #battery, #clock {
     margin: 0 2px;
     padding: 0 5px;
     background-color: #446666;
