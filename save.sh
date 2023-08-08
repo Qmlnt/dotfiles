@@ -5,7 +5,6 @@ doas qncm -if list_system --to dotfiles
 qncm -if list_user --to dotfiles
 printf "\nTree:\n"
 tree -a --dirsfirst dotfiles | tee tree
-# date +'%S:%M:%H %e/%d/%y' >> tree
 
 printf "\n\nChanges:\n"
 git status --short
