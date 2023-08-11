@@ -20,6 +20,8 @@ dotfiles
 │       │   │   ├── binds.conf
 │       │   │   ├── hyprland.conf
 │       │   │   ├── hyprpaper.conf
+│       │   │   ├── swayidle.conf
+│       │   │   ├── swaylock.conf
 │       │   │   ├── variables.conf
 │       │   │   └── windowrules.conf
 │       │   ├── i3
@@ -51,4 +53,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-25 directories, 27 files
+25 directories, 29 files

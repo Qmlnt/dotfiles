@@ -63,7 +63,7 @@
     },
 
     "cpu": {
-        "interval": 8,
+        "interval": 6,
         "tooltip": true,
         "format": " {usage}%",
         "format-alt": " {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"

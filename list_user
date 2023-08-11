@@ -3,6 +3,8 @@
 /home/qmlnt/.config/hypr/variables.conf
 /home/qmlnt/.config/hypr/windowrules.conf
 /home/qmlnt/.config/hypr/hyprpaper.conf
+/home/qmlnt/.config/hypr/swayidle.conf
+/home/qmlnt/.config/hypr/swaylock.conf
 
 /home/qmlnt/.config/waybar/config.jsonc
 /home/qmlnt/.config/waybar/style.css
