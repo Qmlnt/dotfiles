@@ -2,9 +2,10 @@
 /home/qmlnt/.config/hypr/hyprland.conf
 /home/qmlnt/.config/hypr/variables.conf
 /home/qmlnt/.config/hypr/windowrules.conf
-/home/qmlnt/.config/hypr/hyprpaper.conf
-/home/qmlnt/.config/hypr/swayidle.conf
-/home/qmlnt/.config/hypr/swaylock.conf
+/home/qmlnt/.config/hypr/other/hyprpaper.conf
+/home/qmlnt/.config/hypr/other/swayidle.conf
+/home/qmlnt/.config/hypr/other/swaylock.conf
+/home/qmlnt/.config/hypr/scripts/xdph.sh
 
 /home/qmlnt/.config/waybar/config.jsonc
 /home/qmlnt/.config/waybar/style.css
@@ -13,4 +14,4 @@
 /home/qmlnt/.config/kitty/kitty.conf
 /home/qmlnt/.config/kitty/tab_bar.py
 
-#/home/qmlnt/.zshrc
+/home/qmlnt/.zshrc

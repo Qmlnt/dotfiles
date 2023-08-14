@@ -3,7 +3,7 @@
 #----------------------------------
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=2000
 SAVEHIST=50000
 setopt autocd beep notify
@@ -150,6 +150,8 @@ path+=('/home/qmlnt/.local/bin')
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
+alias H='Hyprland'
+alias sudo='doas'
 alias cp='cp -iv'
 alias rm='rm -iv'
 alias mv='mv -iv'
@@ -167,10 +169,7 @@ alias la="ls --color=auto --hyperlink=auto --group-directories-first -Flah"
 
 # alias rcp='rsync -v --progress'
 # alias rmv='rsync -v --progress --remove-source-files'
-# alias ml="source ~/Programming/Environments/MachineLearning/bin/activate; cd ~/Programming/MachineLearning/; kitty jupyter-lab &!"
-# alias mle="source ~/Programming/Environments/MachineLearning/bin/activate"
 alias notify="/home/qmlnt/Programming/Python/notifier.py"
-alias sudoedit="SUDO_EDITOR=nvim sudoedit"
 alias backup="sudo -k ~/Programming/Python/qncm/qncm.py -if ~/Programming/Python/qncm/list --to /home/qmlnt/Backups/main_backup"
 
 
@@ -178,8 +177,6 @@ alias backup="sudo -k ~/Programming/Python/qncm/qncm.py -if ~/Programming/Python
 #               Look
 #----------------------------------
 
-export SUDO_PROMPT=$'\a[sudo] password for qmlnt: '
 PROMPT="%F{87}%n%f%F{69}@%f%F{135}%M%f %F{39}%T%f %F{214}%1d%f %F{111}%?%f%F{51}$%f "
-# some fancy shi
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
