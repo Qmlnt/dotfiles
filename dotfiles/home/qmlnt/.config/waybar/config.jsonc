@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "hyprland/language", "wireplumber", "backlight", "custom/plugged", "battery", "clock"],
+    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -84,12 +84,6 @@
         "format-alt": "🖴 {used}/{total}"
     },
 
-    "hyprland/language": {
-        "format": "{}",
-        "format-en": "EN",
-        "format-uk": "UA"
-    },
-
    "wireplumber": {
         "tooltip": true,
         "tooltip-format": "{node_name}",
@@ -108,6 +102,12 @@
         "on-scroll-down": "",
         "format": "{icon} {percent}%",                                 
         "format-icons": ["","","","","","","","","",""]
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-uk": "UA"
     },
 
     //"custom/plugged": {
