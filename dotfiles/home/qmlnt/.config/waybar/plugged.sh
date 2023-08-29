@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 icons=(󱘖 )
-icon=$(($(cat /sys/class/power_supply/AC/online)+1))
+icon=$(cat /sys/class/power_supply/AC/online)
 echo ${icons[$icon]}

@@ -25,8 +25,7 @@ dotfiles
 │       │   │   │   └── xdph.sh
 │       │   │   ├── binds.conf
 │       │   │   ├── hyprland.conf
-│       │   │   ├── variables.conf
-│       │   │   └── windowrules.conf
+│       │   │   └── variables.conf
 │       │   ├── i3
 │       │   │   ├── autostart
 │       │   │   ├── config
@@ -56,4 +55,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 30 files
+27 directories, 29 files

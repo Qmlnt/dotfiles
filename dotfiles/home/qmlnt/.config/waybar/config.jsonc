@@ -104,12 +104,6 @@
         "format-icons": ["","","","","","","","","",""]
     },
 
-    "hyprland/language": {
-        "format": "{}",
-        "format-en": "EN",
-        "format-uk": "UA"
-    },
-
     //"custom/plugged": {
     //    "interval": 1,
     //    "tooltip": false,
@@ -121,6 +115,12 @@
     //    "format-alt": "test",
     //    "format-icons": {"0": "󱘖", "1": ""}
     //},
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-uk": "UA"
+    },
  
     "custom/plugged": {
         "interval": 4,
@@ -141,7 +141,7 @@
         "format-time": "{H}:{m}",
 
         "format-plugged": "{capacity}%",
-        "format-full": "󱊣{capacity}%",
+        "format-full": "󱟠{capacity}%",
         "format-charging": "󰂄{capacity}% {time} {power:.1f}W",
         "format": "{icon}{capacity}% {power:.2f}W {time}",
         "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
@@ -150,8 +150,7 @@
     "clock" : {
         "interval": 60,
         "tooltip": false,
-        "tooltip-format": "{}",
-        "format": "{:%d.%m %H:%M}",
+        "format": "{:%d %H:%M}",
         "format-alt": "{:%a/%b %d.%m.%y %H:%M}"
     }
 
