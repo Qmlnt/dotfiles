@@ -42,6 +42,7 @@ dotfiles
 │       │   ├── polybar
 │       │   │   └── config.ini
 │       │   └── waybar
+│       │       ├── clock.sh
 │       │       ├── config.jsonc
 │       │       ├── plugged.sh
 │       │       └── style.css
@@ -56,4 +57,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 30 files
+27 directories, 31 files
