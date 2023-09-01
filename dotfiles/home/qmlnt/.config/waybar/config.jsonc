@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "clock"],
+    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -147,11 +147,21 @@
         "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
     },
 
-    "clock" : {
-        "interval": 60,
+    "custom/clock": {
+        "interval": 10,
+        //"restart-interval": 0,
         "tooltip": false,
-        "format": "{:%d %H:%M}",
-        "format-alt": "{:%a/%b %d.%m.%y %H:%M}"
-    }
+        "exec": "~/.config/waybar/clock.sh",
+        "return-type": "json",
+        "escape": false,
+        "format": "{}",
+        "format-alt": "{alt}"
+    },
 
+    //"clock" : {
+    //    "interval": 60,
+    //    "tooltip": false,
+    //    "format": "{:%d %H:%M}",
+    //    "format-alt": "{:%a/%b %d.%m.%y %H:%M}"
+    //}
 }
