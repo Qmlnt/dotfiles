@@ -129,6 +129,7 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 bindkey '^P' up-line-or-beginning-search
+bindkey '^E' up-line-or-beginning-search
 bindkey '^N' down-line-or-beginning-search
 
 # Finally, make sure the terminal is in application mode, when zle is
