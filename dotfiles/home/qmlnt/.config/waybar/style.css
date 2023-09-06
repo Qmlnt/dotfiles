@@ -1,14 +1,14 @@
 * {
     border: none;
-    border-radius: 0;
-    font-family: HackNerdFont;
-    font-weight: 600;
-    font-size: 16px;
     min-height: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: HackNerdFont;
 }
 window#waybar {
-    background: #333333;
     color: #ffffff;
+    background: #333333;
 }
 
 
@@ -26,22 +26,25 @@ window#waybar {
 }
 
 #tray, #bluetooth, #network, #cpu, #memory, #disk, #wireplumber, #backlight, #language, #custom-plugged, #battery, #custom-clock {
-    margin: 0 2px;
-    padding: 0 5px;
-    background-color: #446666;
+    margin: 0 3px;
+    padding: 0 3px;
+    border-bottom: 1px solid #ffffff;
 }
 
 #tray {
     background-color: #445555;
+    border: 0;
 }
 
 #custom-plugged {
     margin-right: 0;
     padding-right: 0;
+    border-right: 0;
 }
 #battery {
     margin-left: 0;
     padding-left: 0;
+    border-left: 0;
 }
 
 #battery.warning, #wireplumber.muted{
@@ -51,3 +54,6 @@ window#waybar {
     background-color: #880000;
 }
 
+#custom-clock {
+    margin-right: 0;
+}
