@@ -31,10 +31,10 @@
     },
 
     "tray": {
-        "icon-size": 18,
-        "show-passive-items": false,
         "spacing": 3,
-        "reverse-direction": true
+        "icon-size": 18,
+        "reverse-direction": true,
+        "show-passive-items": false
     },
 
     "bluetooth": {

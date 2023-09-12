@@ -8,16 +8,12 @@
 }
 window#waybar {
     color: #ffffff;
-    background: #333333;
+    background: #2B2A33;
 }
 
 
-#workspaces button {
-    padding: 0 3px;
-}
-#workspaces button.active {
-    background-color: #446688;
-}
+#workspaces button { padding: 0 3px; }
+#workspaces button.active { background-color: #446688; }
 
 #submap {
     margin-left: 4px;
@@ -31,10 +27,7 @@ window#waybar {
     border-bottom: 1px solid #ffffff;
 }
 
-#tray {
-    background-color: #445555;
-    border: 0;
-}
+#tray { border: 0; }
 
 #custom-plugged {
     margin-right: 0;
@@ -47,13 +40,9 @@ window#waybar {
     border-left: 0;
 }
 
-#battery.warning, #wireplumber.muted{
+#battery.warning, #wireplumber.muted {
     background-color: #886600;
 }
-#battery.critical {
-    background-color: #880000;
-}
+#battery.critical { background-color: #880000; }
 
-#custom-clock {
-    margin-right: 0;
-}
+#custom-clock { margin-right: 0; }

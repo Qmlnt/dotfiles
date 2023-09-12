@@ -22,8 +22,10 @@ dotfiles
 │       │   │   │   ├── swayidle.conf
 │       │   │   │   └── swaylock.conf
 │       │   │   ├── scripts
+│       │   │   │   ├── displays.sh
 │       │   │   │   └── xdph.sh
 │       │   │   ├── binds.conf
+│       │   │   ├── displays.conf
 │       │   │   ├── hyprland.conf
 │       │   │   ├── rules.conf
 │       │   │   └── variables.conf
@@ -57,4 +59,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 31 files
+27 directories, 33 files
