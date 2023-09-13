@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
+    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "custom/microphone", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -85,6 +85,18 @@
         "path": "/",
         "format": "🖴 {percentage_used}%",
         "format-alt": "🖴 {used}/{total}"
+    },
+
+    "custom/microphone": {
+        // SIGRTMIN+{N}, 1 is 35 in killall
+        "signal": 1,
+        "interval": 10,
+        "tooltip": true,
+        "exec": "~/.config/waybar/microphone.sh",
+        "return-type": "json",
+        "escape": false,
+        "format": "{}",
+        "format-alt": "{alt}"
     },
 
    "wireplumber": {

@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-icons=(󱘖 )
-icon=$(cat /sys/class/power_supply/AC/online)
-echo ${icons[$icon]}
+ICONS=(󱘖 )
+STATE=$(cat /sys/class/power_supply/AC/online)
+echo ${ICONS[$STATE]}

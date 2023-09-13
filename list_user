@@ -14,6 +14,7 @@
 
 /home/qmlnt/.config/waybar/config.jsonc
 /home/qmlnt/.config/waybar/style.css
+/home/qmlnt/.config/waybar/microphone.sh
 /home/qmlnt/.config/waybar/plugged.sh
 /home/qmlnt/.config/waybar/clock.sh
 

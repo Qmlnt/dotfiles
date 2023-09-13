@@ -21,7 +21,7 @@ window#waybar {
     background-color: #882222;
 }
 
-#tray, #bluetooth, #network, #cpu, #memory, #disk, #wireplumber, #backlight, #language, #custom-plugged, #battery, #custom-clock {
+#tray, #bluetooth, #network, #cpu, #memory, #disk, #custom-microphone, #wireplumber, #backlight, #language, #custom-plugged, #battery, #custom-clock {
     margin: 0 3px;
     padding: 0 3px;
     border-bottom: 1px solid #ffffff;
@@ -40,9 +40,10 @@ window#waybar {
     border-left: 0;
 }
 
-#battery.warning, #wireplumber.muted {
-    background-color: #886600;
-}
-#battery.critical { background-color: #880000; }
+#battery.warning, #custom-microphone.muted, #wireplumber.muted
+{ background-color: #886600; }
+
+#battery.critical, #custom-microphone.unknown
+{ background-color: #880000; }
 
 #custom-clock { margin-right: 0; }

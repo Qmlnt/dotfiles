@@ -46,6 +46,7 @@ dotfiles
 │       │   └── waybar
 │       │       ├── clock.sh
 │       │       ├── config.jsonc
+│       │       ├── microphone.sh
 │       │       ├── plugged.sh
 │       │       └── style.css
 │       └── .zshrc
@@ -59,4 +60,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 33 files
+27 directories, 34 files
