@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 STATE=$(pactl get-source-mute @DEFAULT_SOURCE@)
-VOL=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -Po "\d*(?=%)" | head -n1)
 NAME=$(pactl get-default-source | grep -Poz "(?<=\.).*?(?=[_-]\d)")
+VOL=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -Po "\d*(?=%)" | head -n1)
 
 ICON='󱦊'; CLASS='unknown'
 case $STATE in

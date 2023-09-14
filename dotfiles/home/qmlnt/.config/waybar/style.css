@@ -21,7 +21,7 @@ window#waybar {
     background-color: #882222;
 }
 
-#tray, #bluetooth, #network, #cpu, #memory, #disk, #custom-microphone, #wireplumber, #backlight, #language, #custom-plugged, #battery, #custom-clock {
+#tray, #bluetooth, #network, #network.eth, #cpu, #memory, #disk, #custom-microphone, #wireplumber, #backlight, #language, #custom-plugged, #battery, #custom-clock {
     margin: 0 3px;
     padding: 0 3px;
     border-bottom: 1px solid #ffffff;

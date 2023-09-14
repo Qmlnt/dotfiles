@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "cpu", "memory", "disk", "custom/microphone", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
+    "modules-right": ["tray", "bluetooth", "network", "network#eth", "cpu", "memory", "disk", "custom/microphone", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -51,18 +51,27 @@
 
     "network": {
         "interval": 6,
-        "tooltip": false,
+        "tooltip": true,
         "max-length": 30,
-        "interface": "wlan0",
         "family": "ipv4",
-        "format": "{ifname}",
-        "format-wifi": "{icon} {essid}",
-        "format-alt": "{icon} ({signalStrength}%) {essid} {frequency}MHz",
-        "format-ethernet": "󰈀 {ipaddr}",
+        "interface": "wlan0",
         "format-linked": "󱤚 ",
-        "format-disconnected": "󰣽 ",
-        "format-icons": ["󰣾","󰣴","󰣶","󰣸","󰣺"]
-        //"format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+        "format": "{icon} {essid}",
+        "format-disconnected": "󰣽 ", // 󰤮
+        "format-alt": "{icon} ({signalStrength}%) {essid} {frequency}MHz",
+        "tooltip-format": "{ifname} {ipaddr}\n{essid} {frequency}MHz {signaldBm}dBm {signalStrength}%\nD:{bandwidthDownBytes} U:{bandwidthUpBytes} T:{bandwidthTotalBytes}",
+        "format-icons": ["󰣾","󰣴","󰣶","󰣸","󰣺"] // ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+    },
+
+    "network#eth": {
+        "interval": 12,
+        "tooltip": true,
+        "family": "ipv4",
+        "interface": "enp1s0",
+        "format": "󰈀 {ifname}",
+        "format-linked": "󰴼",
+        "format-disconnected": "󰈂",
+        "tooltip-format": "{ifname} {ipaddr}\nD:{bandwidthDownBytes} U:{bandwidthUpBytes} T:{bandwidthTotalBytes}"
     },
 
     "cpu": {
