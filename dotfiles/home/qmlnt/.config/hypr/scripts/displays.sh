@@ -15,7 +15,7 @@ if [[ $1 ]]; then STR=${STR/auto/0x0}; fi
 sleep 2
 printf "$STR" > ~/.config/hypr/displays.conf
 
-if [[ $(hyprctl getoption misc:disable_autoreload) =~ \.*int:\ 1\.* ]];
+if [[ $(hyprctl getoption misc:disable_autoreload) =~ int:\ 1 ]];
 then hyprctl reload; fi
 
 # Restart programs that have issues

@@ -18,7 +18,6 @@ dotfiles
 │       ├── .config
 │       │   ├── hypr
 │       │   │   ├── other
-│       │   │   │   ├── hyprpaper.conf
 │       │   │   │   ├── swayidle.conf
 │       │   │   │   └── swaylock.conf
 │       │   │   ├── scripts
@@ -61,4 +60,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 35 files
+27 directories, 34 files
