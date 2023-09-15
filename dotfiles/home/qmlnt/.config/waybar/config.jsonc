@@ -7,7 +7,7 @@
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "network#eth", "cpu", "memory", "disk", "custom/microphone", "wireplumber", "backlight", "hyprland/language", "custom/plugged", "battery", "custom/clock"],
+    "modules-right": ["tray", "bluetooth", "network", "network#eth", "cpu", "memory", "disk", "custom/plugged", "battery", "wireplumber", "custom/microphone", "backlight", "hyprland/language", "custom/clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -15,6 +15,7 @@
     "exclusive": true,
     "ipc": false,
     //"include": ["~/.config/waybar/modules.jsonc"]
+
 
     "hyprland/workspaces": {
         "all-outputs": false,
@@ -35,9 +36,7 @@
 	    }
     },
 
-    "hyprland/submap": {
-        "tooltip": false
-    },
+    "hyprland/submap": { "tooltip": false },
 
     "hyprland/window": {
         "max-length": 100,
@@ -73,7 +72,7 @@
         "format": "{icon} {essid}",
         "format-disconnected": "󰣽 ", // 󰤮
         "format-alt": "{icon} ({signalStrength}%) {essid} {frequency}MHz",
-        "tooltip-format": "{ifname} {ipaddr}\n{essid} {frequency}MHz {signaldBm}dBm {signalStrength}%\nD:{bandwidthDownBytes} U:{bandwidthUpBytes} T:{bandwidthTotalBytes}",
+        "tooltip-format": "{ifname} {ipaddr}\n{essid} {frequency}MHz {signalStrength}% {signaldBm}dBm\nD:{bandwidthDownBytes} U:{bandwidthUpBytes} T:{bandwidthTotalBytes}",
         "format-icons": ["󰣾","󰣴","󰣶","󰣸","󰣺"] // ["󰤯","󰤟","󰤢","󰤥","󰤨"]
     },
 
@@ -110,6 +109,17 @@
         "format-alt": "🖴 {used}/{total}"
     },
 
+   "wireplumber": {
+        "tooltip": true,
+        "tooltip-format": "{node_name}",
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        //"max-volume": 100,
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": ["󰕿","󰖀","󰖀","󰕾"]
+    },
+
     "custom/microphone": {
         // SIGRTMIN+{N}, 1 is 35 in killall
         "signal": 1,
@@ -122,18 +132,6 @@
         "format-alt": "{alt}"
     },
 
-   "wireplumber": {
-        "tooltip": true,
-        "tooltip-format": "{node_name}",
-        "on-scroll-up": "",
-        "on-scroll-down": "",
-        //"max-volume": 100,
-        "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": ["󰕿","󰖀","󰖀","󰕾"]
-
-    },
-
     "backlight": {
         "tooltip": false,
         "on-scroll-up": "",
@@ -141,18 +139,6 @@
         "format": "{icon} {percent}%",                                 
         "format-icons": ["","","","","","","","","",""]
     },
-
-    //"custom/plugged": {
-    //    "interval": 1,
-    //    "tooltip": false,
-    //    "exec": "printf '{\"alt\":\"%s\"}' $(cat /sys/class/power_supply/AC/online)",
-    //    //"exec": "p=(󱘖 ); echo ${p[$(cat /sys/class/power_supply/AC/online)]}",
-    //    "return-type": "json",
-    //    //"escape": false,
-    //    "format": "{icon} {}",
-    //    "format-alt": "test",
-    //    "format-icons": {"0": "󱘖", "1": ""}
-    //},
 
     "hyprland/language": {
         "format": "{}",
@@ -175,14 +161,13 @@
         "adapter": "AC",
         "design-capacity": true,
         //"full-at": 80,
-        "states": {"warning": 20, "critical": 5},
+        "states": {"warning": 30, "critical": 10},
         "format-time": "{H}:{m}",
-
         "format-plugged": "{capacity}%",
         "format-full": "󱟠{capacity}%",
         "format-charging": "󰂄{capacity}% {time} {power:.1f}W",
         "format": "{icon}{capacity}% {power:.2f}W {time}",
-        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+        "format-icons": ["󱃍","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
     },
 
     "custom/clock": {
@@ -194,12 +179,6 @@
         "escape": false,
         "format": "{}",
         "format-alt": "{alt}"
-    },
+    }
 
-    //"clock" : {
-    //    "interval": 60,
-    //    "tooltip": false,
-    //    "format": "{:%d %H:%M}",
-    //    "format-alt": "{:%a/%b %d.%m.%y %H:%M}"
-    //}
 }
