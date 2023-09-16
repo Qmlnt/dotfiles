@@ -39,6 +39,8 @@ dotfiles
 │       │   ├── kitty
 │       │   │   ├── kitty.conf
 │       │   │   └── tab_bar.py
+│       │   ├── mako
+│       │   │   └── config
 │       │   ├── picom
 │       │   │   └── picom.conf
 │       │   ├── polybar
@@ -60,4 +62,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-27 directories, 34 files
+28 directories, 35 files

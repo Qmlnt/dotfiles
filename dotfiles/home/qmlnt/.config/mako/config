@@ -1,0 +1,71 @@
+#-------OTHER---------------------------
+# pango-list
+font=Hack Nerd Font Mono 13
+sort=+time
+# -1, all notifications
+max-visible=3
+# save to history buffer
+max-history=10
+# 0 to disabe timeout
+default-timeout=5000
+group-by=app-name,body
+# Default: <b>%s</b>\n%b Default when grouped: (%g) <b>%s</b>\n%b
+format=<b>%s</b>\n%b
+#icon-path=path[:path...]
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+#-------PX------------------------------
+width=400
+#   Max height
+height=150
+border-size=2
+border-radius=7
+#   ls /usr/share/icons/hicolor/
+max-icon-size=48
+
+#-------COLOR---RRGGBB or RRGGBBAA---
+background-color=#00000099
+text-color=#FFFFFF
+border-color=#AAAAFF
+progress-color=over #8866FFBB
+
+#-------POSITION------------------------
+#output=""
+#   background, bottom, top, overlay
+layer=top
+#   top-{right,center,left}, bottom-{right,center,left}, center-{right,left}, center
+anchor=top-right
+#   left|center|right
+text-alignment=left
+#   left, right, top, bottom
+icon-location=left
+
+#-------DIRECTIONAL---------------------
+outer-margin=10
+#   between notifications
+margin=10
+padding=5,0
+
+#-------0|1-----------------------------
+icons=1
+#   Pango markup
+markup=1
+#   requested by applications
+actions=1
+#   max-history param determines the amount
+history=1
+ignore-timeout=0
+
+
+#-------CRITERIAS----------------------
+[mode=dnd]
+invisible=1
+on-notify=none
+
+
+# Directional values:
+#   A single value will apply to all four edges.
+#   Two values will set vertical and horizontal edges separately.
+#   Three will set top, horizontal, and bottom edges separately.
+#   Four will set top, right, bottom, and left edges separately. 
+#       margin = 10,20,5

@@ -147,6 +147,8 @@ fi
 #        Interactive things
 #----------------------------------
 
+LS_COLORS='di=1;36'; export LS_COLORS
+
 path+=('/home/qmlnt/.local/bin')
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"

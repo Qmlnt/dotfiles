@@ -77,7 +77,7 @@
     },
 
     "network#eth": {
-        "interval": 12,
+        "interval": 10,
         "tooltip": true,
         "family": "ipv4",
         "interface": "enp1s0",

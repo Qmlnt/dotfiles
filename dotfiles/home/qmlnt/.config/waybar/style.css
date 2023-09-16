@@ -33,13 +33,13 @@ window#waybar {
 #network.eth { margin-right: 6px; }
 
 #cpu, #memory, #disk, #custom-plugged, #battery{
-    border-bottom: 1px solid #77ff77;
+    border-bottom: 1px solid #00cc00;
 }
 #cpu     { margin-left: 6px; }
 #battery { margin-right: 6px; }
 
 #wireplumber, #custom-microphone, #backlight, #language {
-    border-bottom: 1px solid #77ffff;
+    border-bottom: 1px solid #aaaaff;
 }
 #wireplumber { margin-left: 6px; }
 #language    { margin-right: 6px; }
