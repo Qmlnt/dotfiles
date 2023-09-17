@@ -27,19 +27,19 @@ window#waybar {
 }
 
 #bluetooth, #network, #network.eth {
-    border-bottom: 1px solid #ff99ff;
+    border-bottom: 1px solid #ee99ee;
 }
 #bluetooth   { margin-left: 6px; }
 #network.eth { margin-right: 6px; }
 
 #cpu, #memory, #disk, #custom-plugged, #battery{
-    border-bottom: 1px solid #00cc00;
+    border-bottom: 1px solid #44bb44;
 }
 #cpu     { margin-left: 6px; }
 #battery { margin-right: 6px; }
 
 #wireplumber, #custom-microphone, #backlight, #language {
-    border-bottom: 1px solid #aaaaff;
+    border-bottom: 1px solid #bbbbff;
 }
 #wireplumber { margin-left: 6px; }
 #language    { margin-right: 6px; }
