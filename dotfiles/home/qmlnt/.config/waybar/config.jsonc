@@ -97,7 +97,7 @@
     "memory": {
         "interval": 12,
         "tooltip": false,
-        "format": " {percentage}%/{swapPercentage}%",
+        "format": " {percentage}%",
         "format-alt": " {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
     },
 
