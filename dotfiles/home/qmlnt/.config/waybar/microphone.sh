@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 STATE=$(pactl get-source-mute @DEFAULT_SOURCE@)
-NAME=$(pactl get-default-source | grep -Poz '(?<=\.).*?(?=[_-]\d)')
+NAME=$(pactl get-default-source | grep -Po '(?<=\.).*?(?=[_-]\d)')
 VOL=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -Po '\d*(?=%)' | head -n1)
 
 ICON='󱦊'; CLASS='unknown'
