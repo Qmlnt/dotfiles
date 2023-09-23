@@ -1,8 +1,8 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 cd /home/qmlnt/Backups/dotfiles/
 
-doas qncm -if list_system --to dotfiles
-qncm -if list_user --to dotfiles
+rsync -aRvvh $(cat list_user) dotfiles
+
 printf "\nTree:\n"
 tree -a --dirsfirst dotfiles | tee tree
 
