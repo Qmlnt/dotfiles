@@ -124,7 +124,7 @@
     "custom/microphone": {
         // SIGRTMIN+{N}, 1 is 35 in killall
         "signal": 1,
-        "interval": 10,
+        "interval": 12,
         "tooltip": true,
         "exec": "~/.config/waybar/microphone.sh",
         "return-type": "json",
@@ -148,7 +148,7 @@
     },
  
     "custom/plugged": {
-        "interval": 4,
+        "interval": 5,
         "tooltip": false,
         "exec": "~/.config/waybar/plugged.sh",
         "format": "{} "
