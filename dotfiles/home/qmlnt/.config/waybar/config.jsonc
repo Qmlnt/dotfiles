@@ -2,12 +2,12 @@
     "name": "main",
     "layer": "top",
     "position": "bottom",
-    //"output": ["eDP-1"],
+    "output": ["HDMI-A-1"],
     "height": 24,
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "network", "network#eth", "cpu", "memory", "disk", "custom/plugged", "battery", "wireplumber", "custom/microphone", "backlight", "hyprland/language", "custom/clock"],
+    "modules-right": ["tray", "bluetooth", "network", "network#eth", "cpu", "memory", "disk", "custom/plugged", "battery", "custom/record", "wireplumber", "custom/microphone", "backlight", "hyprland/language", "custom/clock"],
     "fixed-center": false,
     //"margin": 5,
     //"margin-<top|left|bottom|right>": int,
@@ -91,15 +91,15 @@
     "cpu": {
         "interval": 6,
         "tooltip": true,
-        "format": " {usage}%",
-        "format-alt": " {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"
+        "format": "󰻠 {usage}%",
+        "format-alt": "󰻠 {usage}% {avg_frequency}GHz({min_frequency}-{max_frequency})  {load}"
     },
 
     "memory": {
         "interval": 12,
         "tooltip": false,
-        "format": " {percentage}%",
-        "format-alt": " {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
+        "format": "󰍛 {percentage}%",
+        "format-alt": "󰍛 {used}G/{total}G  󰮱 {swapUsed}G/{swapTotal}G"
     },
 
     "disk": {
@@ -108,6 +108,16 @@
         "path": "/",
         "format": "🖴 {percentage_used}%",
         "format-alt": "🖴 {used}/{total}"
+    },
+
+    "custom/record": {
+        // SIGRTMIN+{N}, 2 is 36 in killall
+        "signal": 2,
+        //"interval": 6,
+        "restart-interval": 10,
+        "tooltip": false,
+        "exec": "~/.config/waybar/scripts/record.sh",
+        "format": "{}"
     },
 
    "wireplumber": {
@@ -126,7 +136,7 @@
         "signal": 1,
         "interval": 12,
         "tooltip": true,
-        "exec": "~/.config/waybar/microphone.sh",
+        "exec": "~/.config/waybar/scripts/microphone.sh",
         "return-type": "json",
         "escape": false,
         "format": "{}",
@@ -150,7 +160,7 @@
     "custom/plugged": {
         "interval": 5,
         "tooltip": false,
-        "exec": "~/.config/waybar/plugged.sh",
+        "exec": "~/.config/waybar/scripts/plugged.sh",
         "format": "{} "
     },
 
@@ -175,7 +185,7 @@
         "interval": 10,
         //"restart-interval": 0,
         "tooltip": false,
-        "exec": "~/.config/waybar/clock.sh",
+        "exec": "~/.config/waybar/scripts/clock.sh",
         "return-type": "json",
         "escape": false,
         "format": "{}",

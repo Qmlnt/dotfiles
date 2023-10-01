@@ -21,7 +21,7 @@ window#waybar {
     background-color: #882222;
 }
 
-#tray, #bluetooth, #network, #network.eth, #cpu, #memory, #disk, #wireplumber, #custom-microphone, #backlight, #language, #custom-plugged, #battery, #custom-clock {
+#tray, #bluetooth, #network, #network.eth, #cpu, #memory, #disk, #custom-record, #wireplumber, #custom-microphone, #backlight, #language, #custom-plugged, #battery, #custom-clock {
     margin: 0 3px;
     padding: 0 3px;
 }
@@ -33,13 +33,19 @@ window#waybar {
 #network.eth { margin-right: 6px; }
 
 #cpu, #memory, #disk, #custom-plugged, #battery{
-    border-bottom: 1px solid #44BB44;
+    border-bottom: 1px solid #44CC44;
 }
 #cpu     { margin-left: 6px; }
 #battery { margin-right: 6px; }
 
+#custom-record {
+    border-bottom: 1px solid #00BBFF;
+}
+#custom-record { margin-left: 6px; }
+#custom-record { margin-right: 6px; }
+
 #wireplumber, #custom-microphone, #backlight, #language {
-    border-bottom: 1px solid #BBBBFF;
+    border-bottom: 1px solid #BBCCFF;
 }
 #wireplumber { margin-left: 6px; }
 #language    { margin-right: 6px; }

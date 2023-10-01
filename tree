@@ -46,10 +46,12 @@ dotfiles
 │       │   ├── polybar
 │       │   │   └── config.ini
 │       │   └── waybar
-│       │       ├── clock.sh
+│       │       ├── scripts
+│       │       │   ├── clock.sh
+│       │       │   ├── microphone.sh
+│       │       │   ├── plugged.sh
+│       │       │   └── record.sh
 │       │       ├── config.jsonc
-│       │       ├── microphone.sh
-│       │       ├── plugged.sh
 │       │       └── style.css
 │       └── .zshrc
 └── usr
@@ -62,4 +64,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-28 directories, 35 files
+29 directories, 36 files

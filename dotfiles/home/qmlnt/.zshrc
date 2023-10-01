@@ -51,7 +51,7 @@ function reset_broken_terminal () {
 }
 add-zsh-hook -Uz precmd reset_broken_terminal
 
- # rehash after pacman operations
+# rehash after pacman operations
 zshcache_time="$(date +%s%N)"
 autoload -Uz add-zsh-hook
 rehash_precmd() {
@@ -154,6 +154,10 @@ path+=('/home/qmlnt/.local/bin')
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 alias H='Hyprland'
+alias audio='yt-dlp --extract-audio --format bestaudio -o "~/Music/%(title)s.%(ext)s"'
+alias ffmpg='ffmpeg -hide_banner'
+alias ffprb='ffprobe -hide_banner'
+
 alias sudo='doas'
 alias cp='cp -iv'
 alias rm='rm -iv'

@@ -13,9 +13,10 @@
 
 /home/qmlnt/.config/waybar/config.jsonc
 /home/qmlnt/.config/waybar/style.css
-/home/qmlnt/.config/waybar/microphone.sh
-/home/qmlnt/.config/waybar/plugged.sh
-/home/qmlnt/.config/waybar/clock.sh
+/home/qmlnt/.config/waybar/scripts/microphone.sh
+/home/qmlnt/.config/waybar/scripts/plugged.sh
+/home/qmlnt/.config/waybar/scripts/clock.sh
+/home/qmlnt/.config/waybar/scripts/record.sh
 
 /home/qmlnt/.config/kitty/kitty.conf
 /home/qmlnt/.config/kitty/tab_bar.py
