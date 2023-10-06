@@ -147,7 +147,8 @@ fi
 #        Interactive things
 #----------------------------------
 
-LS_COLORS='di=1;36'; export LS_COLORS
+export LS_COLORS='di=1;36'
+export MANPAGER='nvim +Man!'
 
 path+=('/home/qmlnt/.local/bin')
 
@@ -157,6 +158,7 @@ alias H='Hyprland'
 alias audio='yt-dlp --extract-audio --format bestaudio -o "~/Music/%(title)s.%(ext)s"'
 alias ffmpg='ffmpeg -hide_banner'
 alias ffprb='ffprobe -hide_banner'
+alias mpvh='mpv --hwdec=auto'
 
 alias sudo='doas'
 alias cp='cp -iv'

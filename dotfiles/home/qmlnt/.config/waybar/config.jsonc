@@ -2,7 +2,7 @@
     "name": "main",
     "layer": "top",
     "position": "bottom",
-    "output": ["HDMI-A-1"],
+    //"output": ["HDMI-A-1"],
     "height": 24,
     //"width": 1280,
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
