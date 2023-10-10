@@ -178,8 +178,8 @@ alias la="ls --color=auto --hyperlink=auto --group-directories-first -Flah"
 
 # alias rcp='rsync -v --progress'
 # alias rmv='rsync -v --progress --remove-source-files'
-alias notify="/home/qmlnt/Programming/Python/notifier.py"
-alias backup="sudo -k ~/Programming/Python/qncm/qncm.py -if ~/Programming/Python/qncm/list --to /home/qmlnt/Backups/main_backup"
+#alias notify="/home/qmlnt/Programming/Python/notifier.py"
+#alias backup="sudo -k ~/Programming/Python/qncm/qncm.py -if ~/Programming/Python/qncm/list --to /home/qmlnt/Backups/main_backup"
 
 
 #----------------------------------
