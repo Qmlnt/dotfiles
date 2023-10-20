@@ -81,8 +81,8 @@
         "interval": 10,
         "tooltip": true,
         "family": "ipv4",
-        "interface": "enp1s0",
-        "format": "󰈀 {ifname}",
+        "interface": "enp4s0f3u1u2",
+        "format": "󰈁",
         "format-linked": "󰴼",
         "format-disconnected": "󰈂",
         "tooltip-format": "{ifname} {ipaddr}\nD:{bandwidthDownBytes} U:{bandwidthUpBytes} T:{bandwidthTotalBytes}"
