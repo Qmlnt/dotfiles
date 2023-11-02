@@ -41,6 +41,8 @@ dotfiles
 │       │   │   └── tab_bar.py
 │       │   ├── mako
 │       │   │   └── config
+│       │   ├── nvim
+│       │   │   └── init.vim
 │       │   ├── picom
 │       │   │   └── picom.conf
 │       │   ├── polybar
@@ -64,4 +66,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-29 directories, 36 files
+30 directories, 37 files
