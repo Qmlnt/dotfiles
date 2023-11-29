@@ -16,6 +16,8 @@ dotfiles
 ├── home
 │   └── qmlnt
 │       ├── .config
+│       │   ├── htop
+│       │   │   └── htoprc
 │       │   ├── hypr
 │       │   │   ├── other
 │       │   │   │   ├── swayidle.conf
@@ -66,4 +68,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-30 directories, 37 files
+31 directories, 38 files

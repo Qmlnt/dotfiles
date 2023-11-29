@@ -9,8 +9,6 @@
 /home/qmlnt/.config/hypr/other/swayidle.conf
 /home/qmlnt/.config/hypr/other/swaylock.conf
 
-/home/qmlnt/.config/mako/config
-
 /home/qmlnt/.config/waybar/config.jsonc
 /home/qmlnt/.config/waybar/style.css
 /home/qmlnt/.config/waybar/scripts/microphone.sh
@@ -22,4 +20,6 @@
 /home/qmlnt/.config/kitty/tab_bar.py
 
 /home/qmlnt/.zshrc
-/home/qmlnt/.config/nvim/init.vim
+
+/home/qmlnt/.config/mako/config
+/home/qmlnt/.config/htop/htoprc
