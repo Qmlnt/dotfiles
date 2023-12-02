@@ -49,6 +49,8 @@ dotfiles
 │       │   │   └── picom.conf
 │       │   ├── polybar
 │       │   │   └── config.ini
+│       │   ├── tridactyl
+│       │   │   └── tridactylrc
 │       │   └── waybar
 │       │       ├── scripts
 │       │       │   ├── clock.sh
@@ -68,4 +70,4 @@ dotfiles
             └── consolefonts
                 └── default16x32.psfu
 
-31 directories, 38 files
+32 directories, 39 files

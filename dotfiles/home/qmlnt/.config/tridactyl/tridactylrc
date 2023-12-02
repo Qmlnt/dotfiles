@@ -1,0 +1,28 @@
+unbind h
+unbind H
+unbind j
+unbind J
+unbind l
+unbind L
+unbind [c
+unbind ]c
+unbind <C-o>
+unbind <C-i>
+
+bind n scrollline  10
+bind e scrollline -10
+bind i scrollpx   -50
+bind o scrollpx    50
+bind N back
+bind E forward
+bind I tabprev
+bind O tabnext
+
+bind k fillcmdline open
+bind K current_url open
+
+bind }} urlincrement  1
+bind {{ urlincrement -1
+bind <C-n> jumpprev
+bind <C-e> jumpnext
+
