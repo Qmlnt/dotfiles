@@ -1,3 +1,4 @@
+" no longer needed
 unbind h
 unbind H
 unbind j
@@ -6,9 +7,8 @@ unbind l
 unbind L
 unbind [c
 unbind ]c
-unbind <C-o>
-unbind <C-i>
 
+" Colemak experience:
 bind n scrollline  10
 bind e scrollline -10
 bind i scrollpx   -50
@@ -23,6 +23,5 @@ bind K current_url open
 
 bind }} urlincrement  1
 bind {{ urlincrement -1
-bind <C-n> jumpprev
-bind <C-e> jumpnext
-
+bind <C-i> jumpprev
+bind <C-o> jumpnext
