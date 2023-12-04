@@ -1,3 +1,28 @@
+" Colemak experience:
+bind n scrollline  10
+bind e scrollline -10
+bind i scrollpx   -50
+bind o scrollpx    50
+bind N back
+bind E forward
+bind I tabprev
+bind O tabnext
+bind k fillcmdline open
+bind K current_url open
+bind }} urlincrement  1
+bind {{ urlincrement -1
+bind <C-i> jumpprev
+bind <C-o> jumpnext
+
+" More binds
+bind ge editor
+bind <C-r> reader
+
+" Settings
+"set newtab about:blank
+set editorcmd kitty nvim
+
+
 " no longer needed
 unbind h
 unbind H
@@ -8,20 +33,6 @@ unbind L
 unbind [c
 unbind ]c
 
-" Colemak experience:
-bind n scrollline  10
-bind e scrollline -10
-bind i scrollpx   -50
-bind o scrollpx    50
-bind N back
-bind E forward
-bind I tabprev
-bind O tabnext
 
-bind k fillcmdline open
-bind K current_url open
-
-bind }} urlincrement  1
-bind {{ urlincrement -1
-bind <C-i> jumpprev
-bind <C-o> jumpnext
+fillcmdline_tmp 2000 Sourced successfully!
+" vim: ft=vim
