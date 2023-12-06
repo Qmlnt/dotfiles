@@ -1,4 +1,13 @@
 " Colemak experience:
+"       UNBINDS
+unbind j
+unbind J
+unbind l
+unbind L
+unbind [c
+unbind ]c
+unbind --mode=visual j
+unbind --mode=visual =
 "       NORMAL
 bind n scrollline  10
 bind e scrollline -10
@@ -20,34 +29,30 @@ bind --mode=visual e js document.getSelection().modify("extend","backward","line
 bind --mode=visual i js document.getSelection().modify("extend","backward","character")
 bind --mode=visual o js document.getSelection().modify("extend","forward","character")
 bind --mode=visual l js document.getSelection().modify("extend","forward","word")
-bind --mode=visual k js tri.visual.reverseSelection(document.getSelection())
+bind --mode=visual h js tri.visual.reverseSelection(document.getSelection())
 bind --mode=visual <Tab> js let n = document.getSelection().anchorNode; let p = n.parentNode; if (p) { p.prev = n; let s = window.getSelection(); s.removeAllRanges(); let r = document.createRange(); r.selectNodeContents(p); s.addRange(r) }
 bind --mode=visual <S-Tab> js let p = document.getSelection().anchorNode.prev; let s = window.getSelection(); s.removeAllRanges(); if (p) { let r = document.createRange(); r.selectNodeContents(p); s.addRange(r) }
-
-
-" More binds
+bind --mode=visual k fillcmdline open
+"       OTHER
 bind ge editor
 bind <C-r> reader
+bind h composite set hintfiltermode simple; set hintchars arstfwneiouykv; reset f; reset F
+bind H composite set hintfiltermode vimperator-reflow; set hintchars 4328901576; lang_f; lang_F
 
-" Settings
+
+"       ALIASES
+command map bind
+command lang_f bind f composite set keyboardlayoutforce false; hint;    set keyboardlayoutforce true
+command lang_F bind F composite set keyboardlayoutforce false; hint -b; set keyboardlayoutforce true
+
+
+"       SETTINGS
 set newtab about:blank
 set editorcmd kitty nvim
 
-
-" no longer needed
-unbind h
-unbind H
-unbind j
-unbind J
-unbind l
-unbind L
-unbind [c
-unbind ]c
-unbind --mode=visual h
-unbind --mode=visual H
-unbind --mode=visual j
-unbind --mode=visual J
-unbind --mode=visual =
+keyfeed h
+set keyboardlayoutforce true
+set keyboardlayoutoverrides {"KeyE":["f","F"],"KeyR":["p","P"],"KeyT":["g","G"],"KeyY":["j","J"],"KeyU":["l","L"],"KeyI":["u","U"],"KeyO":["y","Y"],"KeyP":[";",":"],"KeyS":["r","R"],"KeyD":["s","S"],"KeyF":["t","T"],"KeyG":["d","D"],"KeyJ":["n","N"],"KeyK":["e","E"],"KeyL":["i","I"],"KeyN":["k","K"],"Semicolon":["o","O"]}
 
 
 fillcmdline_tmp 2000 Sourced successfully!
