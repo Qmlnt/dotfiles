@@ -6,6 +6,8 @@ unbind l
 unbind L
 unbind [c
 unbind ]c
+unbind ;m
+unbind ;M
 unbind --mode=visual j
 unbind --mode=visual =
 "       NORMAL
@@ -33,12 +35,13 @@ bind --mode=visual h js tri.visual.reverseSelection(document.getSelection())
 bind --mode=visual <Tab> js let n = document.getSelection().anchorNode; let p = n.parentNode; if (p) { p.prev = n; let s = window.getSelection(); s.removeAllRanges(); let r = document.createRange(); r.selectNodeContents(p); s.addRange(r) }
 bind --mode=visual <S-Tab> js let p = document.getSelection().anchorNode.prev; let s = window.getSelection(); s.removeAllRanges(); if (p) { let r = document.createRange(); r.selectNodeContents(p); s.addRange(r) }
 bind --mode=visual k fillcmdline open
-"       OTHER
+"       ADDITIONAL
 bind ge editor
 bind <C-r> reader
-bind h composite set hintfiltermode simple; set hintchars arstfwneiouykv; reset f; reset F
-bind H composite set hintfiltermode vimperator-reflow; set hintchars 4328901576; lang_f; lang_F
-
+bind ;l hint -JFc img i => tri.excmds.open('https://lens.google.com/uploadbyurl?url='+i.src)
+bind ;L hint -JFc img i => tri.excmds.tabopen('https://lens.google.com/uploadbyurl?url='+i.src)
+bind h composite composite set hintautoselect true;  set hintfiltermode simple; set hintchars arstfwneiouykv; reset f; reset F
+bind H composite composite set hintautoselect false; set hintfiltermode vimperator-reflow; set hintchars 4328901576; lang_f; lang_F
 
 "       ALIASES
 command map bind
@@ -46,11 +49,17 @@ command lang_f bind f composite set keyboardlayoutforce false; hint;    set keyb
 command lang_F bind F composite set keyboardlayoutforce false; hint -b; set keyboardlayoutforce true
 
 
-"       SETTINGS
+" Settings:
+"       LOOK
 set newtab about:blank
+set modeindicatorshowkeys true
+"       FEEL
+set smoothscroll true
+set scrollduration 75
+"       BEHAVIOUR
 set editorcmd kitty nvim
-
 keyfeed h
+set hintdelay 0
 set keyboardlayoutforce true
 set keyboardlayoutoverrides {"KeyE":["f","F"],"KeyR":["p","P"],"KeyT":["g","G"],"KeyY":["j","J"],"KeyU":["l","L"],"KeyI":["u","U"],"KeyO":["y","Y"],"KeyP":[";",":"],"KeyS":["r","R"],"KeyD":["s","S"],"KeyF":["t","T"],"KeyG":["d","D"],"KeyJ":["n","N"],"KeyK":["e","E"],"KeyL":["i","I"],"KeyN":["k","K"],"Semicolon":["o","O"]}
 
