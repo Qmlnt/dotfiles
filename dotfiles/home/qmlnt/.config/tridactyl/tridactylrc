@@ -11,8 +11,8 @@ unbind ;M
 unbind --mode=visual j
 unbind --mode=visual =
 "       NORMAL
-bind n scrollline  10
-bind e scrollline -10
+bind n scrollline  8
+bind e scrollline -8
 bind i scrollpx   -50
 bind o scrollpx    50
 bind N back
@@ -21,10 +21,13 @@ bind I tabprev
 bind O tabnext
 bind k fillcmdline open
 bind K current_url open
+bind D tabclose #
+bind ' gobble 1 markjump
 bind }} urlincrement  1
 bind {{ urlincrement -1
 bind <C-i> jumpprev
 bind <C-o> jumpnext
+bind <C-r> reader
 "       VISUAL
 bind --mode=visual n js document.getSelection().modify("extend","forward","line")
 bind --mode=visual e js document.getSelection().modify("extend","backward","line")
@@ -37,11 +40,10 @@ bind --mode=visual <S-Tab> js let p = document.getSelection().anchorNode.prev; l
 bind --mode=visual k fillcmdline open
 "       ADDITIONAL
 bind ge editor
-bind <C-r> reader
+bind --mode=input <C-e> editor
 bind ;l hint -JFc img i => tri.excmds.open('https://lens.google.com/uploadbyurl?url='+i.src)
 bind ;L hint -JFc img i => tri.excmds.tabopen('https://lens.google.com/uploadbyurl?url='+i.src)
-bind h composite composite set hintautoselect true;  set hintfiltermode simple; set hintchars arstfwneiouykv; reset f; reset F
-bind H composite composite set hintautoselect false; set hintfiltermode vimperator-reflow; set hintchars 4328901576; lang_f; lang_F
+bind ;f fillcmdline hint -f
 
 "       ALIASES
 command map bind
@@ -50,14 +52,14 @@ command lang_F bind F composite set keyboardlayoutforce false; hint -b; set keyb
 
 
 " Settings:
-"       LOOK
+"       FEEL
 set newtab about:blank
 set modeindicatorshowkeys true
-"       FEEL
 set smoothscroll true
 set scrollduration 75
 "       BEHAVIOUR
 set editorcmd kitty nvim
+set searchengine duckduckgo
 keyfeed h
 set hintdelay 0
 set keyboardlayoutforce true
