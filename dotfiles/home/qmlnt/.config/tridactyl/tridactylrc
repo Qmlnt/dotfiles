@@ -25,8 +25,6 @@ bind D tabclose #
 bind ' gobble 1 markjump
 bind }} urlincrement  1
 bind {{ urlincrement -1
-bind <C-i> jumpprev
-bind <C-o> jumpnext
 bind <C-r> reader
 "       VISUAL
 bind --mode=visual n js document.getSelection().modify("extend","forward","line")

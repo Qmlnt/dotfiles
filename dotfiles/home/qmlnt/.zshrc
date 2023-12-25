@@ -159,6 +159,7 @@ alias audio='yt-dlp --extract-audio --format bestaudio -o "~/Music/%(title)s.%(e
 alias ffmpg='ffmpeg -hide_banner'
 alias ffprb='ffprobe -hide_banner'
 alias mpvh='mpv --hwdec=auto'
+alias mpvs='mpv --hwdec=auto --sub-file-paths=sub --sub-fonts-dir=sub/fonts'
 alias kickstart='NVIM_APPNAME=nvim-kickstart nvim "$@"'
 
 alias sudo='doas'
