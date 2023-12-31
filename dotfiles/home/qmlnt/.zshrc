@@ -4,7 +4,7 @@
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
-HISTSIZE=2000
+HISTSIZE=5000
 SAVEHIST=50000
 setopt autocd beep notify
 unsetopt nomatch
