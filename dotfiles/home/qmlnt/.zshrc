@@ -150,7 +150,7 @@ fi
 export LS_COLORS='di=1;36'
 export MANPAGER='nvim +Man!'
 
-path+=('/home/qmlnt/.local/bin')
+path+=('/home/qmlnt/.local/bin' '/home/qmlnt/.cabal/bin' '/home/qmlnt/.ghcup/bin')
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
@@ -161,6 +161,7 @@ alias ffprb='ffprobe -hide_banner'
 alias mpvh='mpv --hwdec=auto'
 alias mpvs='mpv --hwdec=auto --sub-file-paths=sub --sub-fonts-dir=sub/fonts'
 alias kickstart='NVIM_APPNAME=nvim-kickstart nvim "$@"'
+alias nvimdiff='nvim -d' # "$@"'
 
 alias sudo='doas'
 alias cp='cp -iv'
