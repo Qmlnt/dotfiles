@@ -1,3 +1,4 @@
+
 #----------------------------------
 #     From zsh-newuser-install
 #----------------------------------
@@ -10,7 +11,9 @@ setopt autocd beep notify
 unsetopt nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
 # The following lines were added by compinstall
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _ignored _correct _prefix
 zstyle ':completion:*' completions 1
