@@ -1,9 +1,6 @@
 " Colemak experience:
 "       UNBINDS
-unbind j
 unbind J
-unbind l
-unbind L
 unbind [c
 unbind ]c
 unbind ;m
@@ -15,8 +12,8 @@ bind n scrollline  8
 bind e scrollline -8
 bind i scrollpx   -50
 bind o scrollpx    50
-bind N back
-bind E forward
+bind N forward
+bind E back
 bind I tabprev
 bind O tabnext
 bind k fillcmdline open
@@ -43,7 +40,20 @@ bind ge editor
 bind --mode=input <C-e> editor
 bind ;l hint -JFc img i => tri.excmds.open('https://lens.google.com/uploadbyurl?url='+i.src)
 bind ;L hint -JFc img i => tri.excmds.tabopen('https://lens.google.com/uploadbyurl?url='+i.src)
-bind ;f fillcmdline hint -f
+
+bind j fillcmdline hint -f
+bind J fillcmdline hint -fb
+bind / fillcmdline find
+bind ? fillcmdline find --reverse
+bind l findnext --search-from-view
+bind L findnext --search-from-view --reverse
+bind gn findselect
+bind gN composite findnext --search-from-view --reverse; findselect
+bind <C-[> composite mode normal; hidecmdline; nohlsearch
+bind <Escape> composite mode normal; hidecmdline; nohlsearch
+
+bind h composite set hintautoselect true;  set hintfiltermode simple; set hintchars arstfwneiouykv; reset f; reset F
+bind H composite set hintautoselect false; set hintfiltermode vimperator-reflow; set hintchars 4328901576; lang_f; lang_F
 
 "       ALIASES
 command map bind
@@ -66,5 +76,5 @@ set keyboardlayoutforce true
 set keyboardlayoutoverrides {"KeyE":["f","F"],"KeyR":["p","P"],"KeyT":["g","G"],"KeyY":["j","J"],"KeyU":["l","L"],"KeyI":["u","U"],"KeyO":["y","Y"],"KeyP":[";",":"],"KeyS":["r","R"],"KeyD":["s","S"],"KeyF":["t","T"],"KeyG":["d","D"],"KeyJ":["n","N"],"KeyK":["e","E"],"KeyL":["i","I"],"KeyN":["k","K"],"Semicolon":["o","O"]}
 
 
-fillcmdline_tmp 2000 Sourced successfully!
+" fillcmdline_tmp 2000 Sourced successfully!
 " vim: ft=vim
