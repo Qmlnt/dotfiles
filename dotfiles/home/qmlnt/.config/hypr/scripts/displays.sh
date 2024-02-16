@@ -20,7 +20,7 @@ then hyprctl reload; fi
 
 # Restart programs that have issues
 sleep 2
-hyprctl dispatch -- exec "killall gammastep && gammastep -m wayland -PO 3700"
+hyprctl dispatch -- exec "killall gammastep && gammastep -m wayland -PO 4000"
 hyprctl dispatch -- exec "killall hyprpaper && hyprpaper"
 hyprctl dispatch -- exec "killall waybar    && waybar"
 

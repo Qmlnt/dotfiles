@@ -1,6 +1,5 @@
 " Colemak experience:
 "       UNBINDS
-unbind J
 unbind [c
 unbind ]c
 unbind ;m
