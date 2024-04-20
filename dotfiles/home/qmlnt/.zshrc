@@ -153,12 +153,13 @@ fi
 export LS_COLORS='di=1;36'
 export MANPAGER='nvim +Man!'
 
-path+=('/home/qmlnt/.local/bin' '/home/qmlnt/.cabal/bin' '/home/qmlnt/.ghcup/bin')
+path+=('/home/qmlnt/.local/bin' '/home/qmlnt/.cabal/bin' '/home/qmlnt/.ghcup/bin' '/home/qmlnt/.cargo/bin')
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 alias H='Hyprland'
-alias audio='yt-dlp --extract-audio --format bestaudio -o "~/Music/%(title)s.%(ext)s"'
+alias audio='yt-dlp -x --embed-thumbnail --embed-chapters -o "~/Music/%(title)s.%(ext)s"'
+alias playlist='yt-dlp -x --embed-thumbnail --embed-chapters -o "%(title)s.%(ext)s"'
 alias ffmpg='ffmpeg -hide_banner'
 alias ffprb='ffprobe -hide_banner'
 alias mpvh='mpv --hwdec=auto'
