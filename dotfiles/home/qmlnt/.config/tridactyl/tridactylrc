@@ -77,5 +77,5 @@ set keyboardlayoutoverrides {"KeyE":["f","F"],"KeyR":["p","P"],"KeyT":["g","G"],
 setnull searchurls
 set searchurls {"d":"https://duckduckgo.com/?q=","q":"https://www.qwant.com/?q=","g":"https://www.google.com/search?q=","s":"https://startpage.com/do/search?q=","sx":"https://searx.org/search?q=","sn":"https://searx.neocities.org/#q=","so":"https://stackoverflow.com/search?q=","r":"https://www.reddit.com/search/?q=","y":"https://www.youtube.com/results?search_query=","gh":"https://github.com/search?q=","osm":"https://www.openstreetmap.org/search?query=","w":"https://en.wikipedia.org/wiki/Special:Search/","gw":"https://wiki.gentoo.org/index.php?title=Special:Search&profile=default&search=","aw":"https://wiki.archlinux.org/index.php?title=Special:Search&search="}
 
-" fillcmdline_tmp 2000 Sourced successfully!
+fillcmdline_tmp 2000 Sourced successfully!
 " vim: ft=vim
