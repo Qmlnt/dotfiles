@@ -9,13 +9,13 @@ unbind --mode=visual =
 unbind <C-f>
 unbind <C-b>
 "       NORMAL
-bind n scrollline  8
-bind e scrollline -8
-bind i scrollpx   -50
+bind e scrollline  8
+bind i scrollline -8
+bind n scrollpx   -50
 bind o scrollpx    50
-bind N forward
-bind E back
-bind I tabprev
+bind E forward
+bind I back
+bind N tabprev
 bind O tabnext
 bind k fillcmdline open
 bind K current_url open
@@ -27,9 +27,9 @@ bind <C-r> reader
 bind <C-e> scrollline 1
 bind <C-y> scrollline -1 
 "       VISUAL
-bind --mode=visual n js document.getSelection().modify("extend","forward","line")
-bind --mode=visual e js document.getSelection().modify("extend","backward","line")
-bind --mode=visual i js document.getSelection().modify("extend","backward","character")
+bind --mode=visual e js document.getSelection().modify("extend","forward","line")
+bind --mode=visual i js document.getSelection().modify("extend","backward","line")
+bind --mode=visual n js document.getSelection().modify("extend","backward","character")
 bind --mode=visual o js document.getSelection().modify("extend","forward","character")
 bind --mode=visual l js document.getSelection().modify("extend","forward","word")
 bind --mode=visual h js tri.visual.reverseSelection(document.getSelection())
