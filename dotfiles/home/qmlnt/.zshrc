@@ -166,6 +166,7 @@ alias mpvh='mpv --hwdec=auto'
 alias mpvs='mpv --hwdec=auto --sub-file-paths=sub --sub-fonts-dir=sub/fonts'
 alias kickstart='NVIM_APPNAME=nvim-kickstart nvim "$@"'
 alias nvimdiff='nvim -d' # "$@"'
+alias chat='OLLAMA_NOHISTORY=y ollama run --nowordwrap'
 
 alias sudo='doas'
 alias cp='cp -iv'
