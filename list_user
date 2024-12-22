@@ -19,8 +19,10 @@
 /home/qmlnt/.config/kitty/kitty.conf
 /home/qmlnt/.config/kitty/tab_bar.py
 
-/home/qmlnt/.zshrc
 /home/qmlnt/.config/tridactyl/tridactylrc
 
 /home/qmlnt/.config/mako/config
 /home/qmlnt/.config/htop/htoprc
+
+/home/qmlnt/.zshrc
+/home/qmlnt/.cargo/config.toml
