@@ -132,7 +132,7 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 bindkey '^P' up-line-or-beginning-search
-bindkey '^E' up-line-or-beginning-search
+bindkey '^O' up-line-or-beginning-search
 bindkey '^N' down-line-or-beginning-search
 
 # Finally, make sure the terminal is in application mode, when zle is
@@ -167,6 +167,7 @@ alias mpvs='mpv --hwdec=auto --sub-file-paths=sub --sub-fonts-dir=sub/fonts'
 alias kickstart='NVIM_APPNAME=nvim-kickstart nvim "$@"'
 alias nvimdiff='nvim -d' # "$@"'
 alias chat='OLLAMA_NOHISTORY=y ollama run --nowordwrap'
+alias packettracer='QT_QPA_PLATFORM=xcb packettracer'
 
 alias sudo='doas'
 alias cp='cp -iv'
