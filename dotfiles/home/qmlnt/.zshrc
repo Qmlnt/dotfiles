@@ -158,6 +158,7 @@ path+=('/home/qmlnt/.local/bin' '/home/qmlnt/.cabal/bin' '/home/qmlnt/.ghcup/bin
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 alias H='Hyprland'
+alias steam='gamemoderun steam-runtime'
 alias audio='yt-dlp -x --embed-thumbnail --embed-chapters -o "~/Music/%(title)s.%(ext)s"'
 alias playlist='yt-dlp -x --embed-thumbnail --embed-chapters -o "%(title)s.%(ext)s"'
 alias ffmpg='ffmpeg -hide_banner'
